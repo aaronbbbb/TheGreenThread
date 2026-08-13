@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robi's Seamstress - Professional Sewing & Repair Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo-section">
+                <img src="Gemini_Generated_Image_p576o0p576o0p576.png" alt="Robi's Seamstress Logo" class="logo">
+                <h1>Robi's Seamstress</h1>
+            </div>
+            <p class="tagline">Professional Sewing & Repair Services</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Quality Sewing & Repair Services</h2>
+                <p>Expert seamstress services for all your clothing needs</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <div class="container">
+                <h2>Our Services & Pricing</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Sewing Repair</h3>
+                        <p class="price">$10</p>
+                        <p class="description">General sewing repairs for your clothing</p>
+                        <button class="service-btn" onclick="selectService('Sewing Repair - $10')">Select</button>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Hemming</h3>
+                        <p class="price">$25 - $50</p>
+                        <p class="description">Pants, dresses, and other hemming services</p>
+                        <button class="service-btn" onclick="selectService('Hemming - $25-$50')">Select</button>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Zipper Repair</h3>
+                        <p class="price">FREE</p>
+                        <p class="description">Fix broken or stuck zippers</p>
+                        <button class="service-btn" onclick="selectService('Zipper Repair - FREE')">Select</button>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Seam Repairs</h3>
+                        <p class="price">$25</p>
+                        <p class="description">Professional seam repair and stitching</p>
+                        <button class="service-btn" onclick="selectService('Seam Repairs - $25')">Select</button>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Patching</h3>
+                        <p class="price">$30</p>
+                        <p class="description">Quality patches for holes and damage</p>
+                        <button class="service-btn" onclick="selectService('Patching - $30')">Select</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>Ready to get your items repaired? Contact us via WhatsApp!</p>
+                <div class="contact-buttons">
+                    <a href="https://wa.me/13062615795?text=Hello! I'm interested in your sewing services." 
+                       class="whatsapp-btn" target="_blank">
+                        <span>💬 Contact on WhatsApp</span>
+                        <span class="phone">306-261-5795</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Robi's Seamstress. All rights reserved.</p>
+            <p>Professional sewing and repair services with quality craftsmanship</p>
+        </div>
+    </footer>
+
+    <!-- Selected Service Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Service Selected</h2>
+            <p id="selectedServiceText"></p>
+            <p>Click the WhatsApp button below to contact us about this service:</p>
+            <a href="https://wa.me/13062615795?text=Hello! I'm interested in your sewing services." 
+               class="whatsapp-btn-modal" target="_blank">
+                💬 Message on WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
